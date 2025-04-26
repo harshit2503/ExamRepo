@@ -5,7 +5,7 @@ pipeline {
         DOCKER_PATH = 'C:\\Program Files\\Docker\\Docker\\resources\\bin'
         PATH = "${DOCKER_PATH};${PATH}"
 
-        DOCKERHUB_USERNAME = 'adityajangid2025'
+        DOCKERHUB_USERNAME = 'harsht25'
         DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials-id'   // Jenkins credentials ID
         IMAGE_NAME = 'examimg-new'
         IMAGE_TAG = 'latest'
@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/PerrytheePlatypus/ExamRepo.git'
+                git branch: 'main', url: 'https://github.com/harshit2503/ExamRepo.git'
             }
         }
 
